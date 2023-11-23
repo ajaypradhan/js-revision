@@ -25,9 +25,12 @@ JsUser.email ="ajay.pradhan@gmail.com" // to change the value
 JsUser.email = "pradhan.ajay@gamil.cp,"
 // console.log(JsUser);
 
-JsUser.greetings = function(){
-    console.log("Hello User");
+JsUser.greeting = function(){
+    console.log("Hello JS user");
+}
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greetings); 
-console.log(JsUser.greetings);
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());

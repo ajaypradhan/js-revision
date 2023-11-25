@@ -1,12 +1,58 @@
-// var c = 300
+//var c = 300
 let a = 300
-
 if (true) {
-    let a = 30
-    const b = 40
-    console.log('Inner:', a);   
+    let a = 10
+    const b = 20
+    // console.log("INNER: ", a);
+    
 }
 
-console.log(a);
+
+
+// console.log(a);
 // console.log(b);
 // console.log(c);
+
+
+function one(){
+    const username = "ajay"
+
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+
+     two()
+
+}
+
+// one()
+
+if (true) {
+    const username = "ajay"
+    if (username === "ajay") {
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+
+// console.log(username);
+
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+
+addTwo(5)
+const addTwo = function(num){
+    return num + 2
+}
